@@ -7,3 +7,561 @@
 	<h1> this is my public website</h1>
 </body>
 </html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
+	pokerit
+</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" href="Style/Images/emperor.ico"><link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet"><link href="Style/Emperor0520.css" rel="stylesheet"><link href="Style/Navbar0229.css" rel="stylesheet">
+<script src="Scripts/jquery-3.1.1.min.js"></script>
+<script src="Bootstrap/js/bootstrap.min.js"></script>
+<script src="Scripts/autoNumeric.js"></script>
+<link href="Style/hover-min.css" rel="stylesheet">
+<script>
+        $(document).ready(function () {
+            $('ul.nav > li > a[href="' + document.location.pathname + '"]').parent().addClass('active');
+        });
+    </script>
+<script>
+        jQuery(function ($) {
+            $('.numeric-inputs').autoNumeric('init', { aSep: ',', mDec: '0' });
+        });
+        $(document).ready(function () {
+            $(".alert-home").click(function () {
+                $(this).hide(1000);
+            });
+        })
+    </script>
+<style>
+        .tran {
+            background-color: transparent;
+        }
+
+        .menu-item-badg {
+            height: 30px;
+            width: 30px;
+            margin-top: -2px;
+        }
+
+        .menu-item-desc {
+            font-size: 10.5px;
+            color: #0d083b;
+            text-shadow: none !important;
+        }
+    </style>
+<title>Home</title>
+<style>
+        html, body {
+            background-image: url('Style/Images/bg-home-main.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: top;
+            background-position-y: center;
+        }
+
+        .system-status-span {
+            text-shadow: 0 0 3px #000;
+            color: #fff;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        .home-main-div {
+            margin: 0px auto;
+            width: 100%;
+            clear: both;
+            /*margin-top: -22px;*/
+        }
+
+        .bottom-pannel {
+            position: fixed;
+            bottom: 0px;
+            display: block;
+            width: 100%;
+        }
+
+        .home-main-buttons {
+            display: block;
+            height: 30px;
+            font-size: 12px;
+            font-family: FiraSans-Light;
+            line-height: 30px;
+            width: 100%;
+            border: 1px dashed rgba(255, 255, 255, 0.7);
+            border-radius: 4px;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            margin: 5px auto;
+        }
+
+            .home-main-buttons:hover {
+                text-decoration: none;
+                color: #000000;
+                text-shadow: 0 0 1px #000;
+            }
+
+        .blue {
+            background-color: rgba(0, 38, 255, 0.20);
+            box-shadow: inset 0 0 10px rgba(0, 38, 255, 0.60);
+        }
+
+            .blue:hover {
+                box-shadow: 0 0 5px rgb(0, 38, 255);
+            }
+
+        .purpel {
+            background-color: rgba(167, 0, 255, 0.2);
+            box-shadow: inset 0 0 10px rgba(167, 0, 255, 0.60);
+        }
+
+            .purpel:hover {
+                box-shadow: 0 0 5px rgb(167, 0, 255);
+            }
+
+        .light-blue {
+            background-color: rgba(73, 184, 255,0.2);
+            box-shadow: inset 0 0 10px rgba(73, 184, 255, 0.60);
+        }
+
+            .light-blue:hover {
+                box-shadow: 0 0 5px rgb(73, 184, 255);
+            }
+
+        .shadowed {
+            filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='0' dy='0' result='offsetblur'/><feFlood flood-color='rgba(219, 248, 29, 0.50)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
+            -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='rgba(219, 248, 29, 0.50')";
+            filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='rgba(219, 248, 29, 0.50')";
+            -webkit-filter: drop-shadow(0 0 25px rgba(255, 180, 0, 0.70));
+        }
+
+        .face {
+            animation: shake 0.82s cubic-bezier(.36,.07,.99,.97) both infinite;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+
+        @keyframes shake {
+            10%, 90% {
+                transform: translate3d(-1px, 0, 0);
+            }
+
+            20%, 80% {
+                transform: translate3d(1px, -3px, 0);
+            }
+
+            30%, 50%, 70% {
+                transform: translate3d(-2px, -4px, 0);
+            }
+
+            40%, 60% {
+                transform: translate3d(2px, -5px, 0);
+            }
+        }
+
+        .site-news-span {
+            font-size: 2vw;
+            letter-spacing: 1px;
+            font-weight: 500;
+            color: #fff;
+            text-shadow: 0 0 15px #000;
+            text-transform: uppercase;
+        }
+
+        .awards-img {
+            float: left;
+            height: 75px;
+            width: 75px;
+            margin: 0 5px;
+        }
+
+        .shadowed-purpel {
+            filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='0' dy='0' result='offsetblur'/><feFlood flood-color='rgba(167, 0, 255, 0.60)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
+            -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='rgba(167, 0, 255, 0.60)'";
+            filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='rgba(167, 0, 255, 0.60)'";
+            -webkit-filter: drop-shadow(0 0 25px rgba(167, 0, 255, 0.60));
+        }
+
+        .awards-badge {
+            float: left;
+            position: relative;
+            z-index: 999;
+            width: 28px;
+            height: 28px;
+            line-height: 25px;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 800;
+            border: 1px solid rgba(0, 0, 0, 0.41);
+            text-shadow: 0 0 2px #000;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.40);
+            background: red;
+            border-radius: 5px;
+            margin-left: -17px;
+            font-family: Muli;
+        }
+
+        .white-text {
+            color: rgba(228, 244, 254, 0.90) !important;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+<div style="box-shadow: inset 0 0 105px #000000; min-height: 100%;">
+<form method="post" action="./Home.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZCOSGsHqhRnx5Ob2rmmSXONuCzmWvHg77ZeOo6q19Tg5P0Wg6MsVvNACCFkgvIugOQ2&amp;t=637823491705833095" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvuzsQ0g43xVGmMARFTCaAX2IPJ5YoIaCfqTf2J1hWP8sKylDXeorvjvE7_RqXjbt_0DNfB4gRmDue_r2eOSiDCR541ZwCErGUz0t11ycRuNuAqnab94wfvtNWVhTNqJFjoCFC9997c0HJfhW7sgSbmg1&amp;t=ffffffffaa493ab8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OPCMcauNlaLpPryQoXuF4CWhtWpm3vLE36tXBYGJbYAngGXSSXZ-8P_1NAkpYI1Q8MsyVgjYNV1oAZWbnjWS2YJA8CpUQQor19lAPE556VMmGU5Fg8PSOAqsNSJnYCsKKHPMV6f3DtbGiC1AMGczPOk1&amp;t=ffffffffaa493ab8" type="text/javascript"></script>
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="8D0E13E6">
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="xxMuEwTv6neFTkqclqkrmIOPtFs1sPFy5IgXRVwmbmfcEna4fg7OvHKkCk87JNQ/7KuOt3Bi59wYRHsQxkSV5T/SRJhm9wKdP3RMmZLQI1KJ0/SunWh8yBUi1i/JPMnC2ERrQNDZaqguNVdWM4uNNA==">
+</div>
+<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManagerMaster', 'form1', ['tctl00$udpPlayerChips','udpPlayerChips','tctl00$ContentPlaceHolder1$udpPlayerChips','ContentPlaceHolder1_udpPlayerChips'], [], [], 90, 'ctl00');
+//]]>
+</script>
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="Waiting.html?page=/Home.aspx">
+<b class="logo-emperor">Emperor</b>
+<b class="logo-poker">Poker</b></a>
+</div>
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li>
+<a href="Waiting.html?page=Home.aspx" class="hvr-pop"><span class="tooltip-new"><span class="menu-links">Home</span><span class="bottom-new hidden-xs">خانه<i></i></span><span class="right-new  hidden-lg hidden-md hidden-sm">خانه<i></i></span></span></a>
+</li>
+<li>
+<a href="Waiting.html?page=ChoosePlayRoom.aspx" class="hvr-pop"><span class="tooltip-new"><span class="menu-links">Play</span><span class="bottom-new  hidden-xs">ورود به بازی<i></i></span><span class="right-new  hidden-lg hidden-md hidden-sm">ورود به بازی<i></i></span></span></a>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle hvr-pop" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="tooltip-new"><span class="menu-links">Deposits</span><span class="bottom-new hidden-xs">خرید چیپ<i></i></span><span class="right-new  hidden-lg hidden-md hidden-sm">خرید چیپ<i></i></span></span><span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li>
+</li>
+<li>
+</li>
+<li>
+<a href="Waiting.html?page=Deposit2.aspx"><img class="menu-item-badg" src="Style//Images//emp-shetab.png"> Shetab <span class="menu-item-desc">2 (Toman)</span></a>
+</li>
+<li>
+<a href="Waiting.html?page=DepositHigh.aspx"><img class="menu-item-badg" src="Style//Images//emp-shetab.png"> Shetab High <span class="menu-item-desc">(Toman) VIP</span> </a>
+</li>
+<li>
+</li>
+<li>
+<a href="Waiting.html?page=DepositPerfectMoneyVoucher.aspx"><img class="menu-item-badg" src="Style//Images//emp-perfmoney.png"> Voucher <span class="menu-item-desc">(PM-$)</span></a>
+ </li>
+<li>
+</li>
+<li>
+<a href="Waiting.html?page=DepositCrypto.aspx"><img class="menu-item-badg" src="Style//Images//emp-crypto.png"> Cryptocurrency <span class="menu-item-desc">$</span></a>
+</li>
+<li>
+<a href="Waiting.html?page=DepositCryptoNP.aspx"><img class="menu-item-badg" src="Style//Images//trc20.png"> USDT (TRC20) <span class="menu-item-desc">$</span></a>
+</li>
+<li>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle hvr-pop" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="tooltip-new"><span class="menu-links">Cashouts</span><span class="bottom-new hidden-xs">نقد کردن چیپ<i></i></span><span class="right-new  hidden-lg hidden-md hidden-sm">نقد کردن چیپ<i></i></span></span><span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li>
+<a href="Waiting.html?page=Cashout.aspx"><img class="menu-item-badg" src="Style//Images//emp-shetab.png"> Shetab <span class="menu-item-desc">(Toman)</span></a>
+</li>
+<li>
+<a href="Waiting.html?page=CashoutVIP.aspx"><img class="menu-item-badg" src="Style//Images//emp-shetab.png"> Cashout VIP <span class="menu-item-desc">(Toman)</span></a>
+</li>
+<li>
+<a href="Waiting.html?page=CashoutPerfectMoneyVoucher.aspx"><img class="menu-item-badg" src="Style//Images//emp-perfmoney.png"> Voucher <span class="menu-item-desc">(PM-$)</span></a>
+</li>
+<li>
+<a href="Waiting.html?page=CashoutPerfectMoneyDirect.aspx"><img class="menu-item-badg" src="Style//Images//emp-perfmoney.png"> To Account <span class="menu-item-desc">(PM-$)</span></a>
+</li>
+<li>
+</li>
+<hr>
+<li>
+<a href="Waiting.html?page=BankAccountInfo.aspx">Bank Account</a>
+</li>
+<li>
+<a href="Waiting.html?page=PerfectMoneyAccountInfo.aspx">Perfect Money Account</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle hvr-pop" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="tooltip-new"><span class="menu-links">Invite</span><span class="bottom-new hidden-xs">دعوت از دوستان و دریافت پورسانت<i></i></span><span class="right-new  hidden-lg hidden-md hidden-sm">دعوت از دوستان و دریافت پورسانت<i></i></span></span><span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li>
+<a href="Waiting.html?page=Invite.aspx">Invite</a></li>
+ <li>
+<a href="Waiting.html?page=InvitesList.aspx">My Players</a></li>
+<hr>
+<li>
+<a href="Waiting.html?page=Rakeback.aspx">Rakeback</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="Waiting.html?page=Ranking.aspx" class="hvr-pop"><span class="tooltip-new"><span class="menu-links">Ranking</span><span class="bottom-new hidden-xs">جدول رتبه بندی<i></i></span><span class="right-new  hidden-lg hidden-md hidden-sm">جدول رتبه بندی<i></i></span></span></a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li><a class="hvr-pop" href="Waiting.html?page=Support.aspx"><span class="tooltip-new"><span class="menu-links">Support</span><span class="bottom-new">ارتباط با پشتبانی سایت<i></i></span></span></a></li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle hvr-pop" data-toggle="dropdown" role="button" aria-haspopup="true" style="color: #fff" aria-expanded="false"><span class="tooltip-new"><span class="menu-links">[<span id="lblPlayername">GINGILIGOON</span>]</span><span class="bottom-new hidden-xs">تنظیمات<i></i></span><span class="right-new  hidden-lg hidden-md hidden-sm">تنظیمات<i></i></span></span><span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="Waiting.html?page=BankAccountInfo.aspx">Bank Account</a></li>
+<li><a href="Waiting.html?page=PerfectMoneyAccountInfo.aspx">Perfect Money Account</a></li>
+<li><a href="Waiting.html?page=Waiting.html?page=Avatars.aspx">Avatars</a></li>
+<li><a href="Waiting.html?page=ChangePassword.aspx">Change Password</a></li>
+<hr>
+<li><a href="Waiting.html?page=ActivityList.aspx">Activity History</a></li>
+<li><a href="Waiting.html?page=PlayerStatus.aspx">Play Summery</a></li>
+<li><a href="Waiting.html?page=MyAwards.aspx">My Awards</a></li>
+</ul>
+</li>
+<li class="hidden-xs hidden-sm" style="padding-left: 5px; padding-top: 2px;">
+<div id="udpProgPlayerChips" style="display:none;" role="status" aria-hidden="true">
+<div style="margin: 0 auto; width: 91%; height: 100%; position: absolute; background-color: rgba(0, 255, 255, 0.30); border-radius: 4px; text-align: center;">
+<img style="margin: 10px auto; padding: 0; width: 30px; height: 30px;" src="Style/Images/loader-blue.gif">
+</div>
+</div>
+<div id="udpPlayerChips">
+<span class="menu-links" style="letter-spacing: 1px; color: #fff; text-shadow: 0 0 2px #000;">
+<span id="lblTotalChips" class="navbar-text" style="color:White;">H:0| L:91,012</span>
+</span>
+<input type="submit" name="ctl00$btnRefreshChips" value="R" id="btnRefreshChips" class="btn btn-black navbar-btn">
+</div>
+</li>
+<li>
+<a href="Waiting.html?page=Logout.aspx" class="hvr-pop"><span class="tooltip-new"><span class="menu-links">Logout</span><span class="bottom-new hidden-xs">خروج<i></i></span><span class="right-new  hidden-lg hidden-md hidden-sm">خروج<i></i></span></span></a>
+</li>
+</ul>
+</div>
+
+</div>
+
+</nav>
+<div>
+<div class="container home-main-div">
+<div class="row hidden-md hidden-lg" style="margin-top: 10px;">
+<br>
+<br>
+<br>
+<br>
+</div>
+<div class="row hidden-md hidden-lg" style="margin-bottom: 8px;">
+<div class="col-md-4 col-xs-4">
+<div id="ContentPlaceHolder1_pnlMobileDeposit">
+<a class="home-main-buttons blue" href="Waiting.html?page=Deposit2.aspx">Deposit</a>
+</div>
+</div>
+<div class="col-md-4 col-xs-4">
+<div id="ContentPlaceHolder1_pnlMobilePlay">
+<a class="home-main-buttons purpel" href="Waiting.html?page=ChoosePlayRoom.aspx">Play</a>
+</div>
+</div>
+<div class="col-md-4 col-xs-4">
+<div id="ContentPlaceHolder1_pnlMobileCashout">
+<a class="home-main-buttons light-blue" href="Waiting.html?page=Cashout.aspx">Cashout</a>
+</div>
+</div>
+</div>
+<div class="row hidden-md hidden-lg" style="margin-bottom: 8px;">
+<div class="col-xs-12" style="background-color: rgba(31, 31, 31, 0.60); text-align: center; text-shadow: 0 0 3px #000; padding-top: 8px; letter-spacing: 2px; border-radius: 4px;">
+<b>
+<span id="ContentPlaceHolder1_lblPlayername" class="center" style="color:White;">GINGILIGOON</span>
+</b>
+</div>
+<style>
+                .btn-home-refresh {
+                    margin-top: -4px;
+                    height: 34px;
+                    width: 34px;
+                }
+            </style>
+<div class="col-xs-12" style="background-color: rgba(31, 31, 31, 0.60); text-align: center; text-shadow: 0 0 3px #000; padding-top: 5px; height: 38px; letter-spacing: 2px; border-radius: 4px;">
+<div id="ContentPlaceHolder1_udpProgPlayerChips" style="display:none;" role="status" aria-hidden="true">
+<div style="margin: 0 auto; width: 91%; height: 38px; position: absolute; background-color: rgba(0, 0, 0, 0.7); border-radius: 4px; text-align: center; margin-top: -5px;">
+<img style="margin: 4px auto; padding: 0; width: 30px; height: 30px;" src="Style/Images/loader-blue.gif">
+</div>
+</div>
+<div id="ContentPlaceHolder1_udpPlayerChips">
+<span id="ContentPlaceHolder1_lblTotalChips" class="center" style="color:White;">H:0| L:91,012</span>
+<input type="submit" name="ctl00$ContentPlaceHolder1$btnRefreshChips" value="R" id="ContentPlaceHolder1_btnRefreshChips" class="btn btn-black btn-home-refresh">
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12" style="position: relative; background-color: rgba(31, 31, 31, 0.60); border-radius: 4px; text-align: center;">
+<span id="ContentPlaceHolder1_lblSystemInfo" class="system-status-span"><b>Low: 206+33 | High: 18+2</b></span>
+</div>
+</div>
+<br>
+<div class="row">
+<div class="col-md-12">
+<div id="ContentPlaceHolder1_pnlCashGame">
+<a href="Waiting.html?page=PlayL.aspx" target="_blank"><img src="Style/Images/cash-games.png" class="awards-img shadowed-purpel"></a>
+</div>
+<div id="ContentPlaceHolder1_pnlRanking">
+<a href="Waiting.html?page=Ranking.aspx"><img src="Style/Images/ranking2.png " class="awards-img shadowed-purpel"></a>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<br>
+<br>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<br>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+</div>
+</div>
+<div class="hidden-sm hidden-xs" style="position: fixed; text-align: center; width: 20vw; height: 20vw; right: 5vw; bottom: 10vw;">
+<img style="display: block; width: 13vw; height: 15vw; margin: 0 auto;" src="Style/Images/emperor.png">
+<span id="ContentPlaceHolder1_lblSiteNews" class="site-news-span">You will enter anonymously, how you leave is up to you...</span>
+</div>
+</div>
+<div class="bottom-pannel">
+<div class="container" style="width: 100%;">
+<div class="row" style="text-align: center; background-color: rgba(0, 0, 0, 0.7); text-decoration: none; color: rgba(228, 244, 254, 0.90) !important; text-shadow: 0 0 5px #000; padding: 3px; letter-spacing: 3px; font-size: 12px;">
+<div class="col-md-4 col-xs-12" style="margin-top: 5px;">
+<style>
+                        .site-address {
+                            display: block;
+                            background: rgba(167, 0, 255, 0.60);
+                            padding: 2px 50px;
+                            border: 1px solid rgba(167, 0, 255, 1);
+                            border-radius: 3px;
+                            width: 100%;
+                            font-family: Muli !important;
+                        }
+
+                        .site-address-filter {
+                            background: rgba(255, 0, 0, 0.60);
+                            border: 1px solid rgba(255, 0, 0, 1);
+                        }
+                    </style>
+<span id="copyButton" style="width: 100%; font-family: Muli !important;" class="hvr-wobble-horizontal tooltip-new">
+<span id="ltlSiteAddress" class="site-address">https://100ror.site/</span>
+<span class="top-new">Click To Copy
+<i></i>
+</span>
+</span>
+<script>
+
+                        $(document).ready(function () {
+                            document.getElementById("copyButton").addEventListener("click", function () {
+                                copyToClipboard(document.getElementById("ltlSiteAddress"));
+                            });
+
+                            function copyToClipboard(elem) {
+                                var targetId = "_hiddenCopyText_";
+                                var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+                                var origSelectionStart, origSelectionEnd;
+                                if (isInput) {
+                                    target = elem;
+                                    origSelectionStart = elem.selectionStart;
+                                    origSelectionEnd = elem.selectionEnd;
+                                } else {
+                                    target = document.getElementById(targetId);
+                                    if (!target) {
+                                        var target = document.createElement("textarea");
+                                        target.style.position = "absolute";
+                                        target.style.left = "-9999px";
+                                        target.style.top = "0";
+                                        target.id = targetId;
+                                        document.body.appendChild(target);
+                                    }
+                                    target.textContent = elem.textContent;
+                                }
+                                var currentFocus = document.activeElement;
+                                target.focus();
+                                target.setSelectionRange(0, target.value.length);
+                                var succeed;
+                                try {
+                                    succeed = document.execCommand("copy");
+                                } catch (e) {
+                                    succeed = false;
+                                }
+                                if (currentFocus && typeof currentFocus.focus === "function") {
+                                    currentFocus.focus();
+                                }
+                                if (isInput) {
+                                    elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+                                } else {
+                                    target.textContent = "";
+                                }
+                                return succeed;
+                            }
+                        })
+
+                    </script>
+</div>
+<div class="col-md-4 col-xs-12" style="margin-top: 5px;">
+<img style="height: 16px; width: 16px; margin-top: -3px; text-transform: none !important;" src="Style/Images/telegram-icon.png">
+@Emp4Play
+</div>
+<div class="col-md-4 col-xs-12" style="margin-top: 5px;">
+<img style="height: 16px; width: 16px; margin-top: -3px;" src="Style/Images/instagraam-black-icon.png">
+EmperorPoker
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":"udpPlayerChips","displayAfter":500,"dynamicLayout":true}, null, null, $get("udpProgPlayerChips"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":"ContentPlaceHolder1_udpPlayerChips","displayAfter":500,"dynamicLayout":true}, null, null, $get("ContentPlaceHolder1_udpProgPlayerChips"));
+});
+//]]>
+</script>
+</form>
+</div>
+
+
+</body></html>
